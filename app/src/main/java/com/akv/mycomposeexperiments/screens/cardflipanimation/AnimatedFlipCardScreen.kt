@@ -24,7 +24,7 @@ import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun AnimatedCardScreen() {
+fun FlipCardScreen() {
 
     val isFlipped = rememberSaveable { mutableStateOf(true) }
     val flipAnim = animateFloatAsState(
@@ -51,7 +51,6 @@ fun AnimatedCardScreen() {
     }
 
 
-
     Spacer(modifier = Modifier.size(16.dp))
     Button(
         onClick = { isFlipped.value = !isFlipped.value },
@@ -61,6 +60,8 @@ fun AnimatedCardScreen() {
 
 }
 
+
+// these composables are added for testing purposes only
 @Composable
 fun Front() {
     Box(

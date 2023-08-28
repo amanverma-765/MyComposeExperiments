@@ -37,7 +37,7 @@ import androidx.compose.ui.unit.dp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ScrollTransition() {
+fun ScrollTransformation() {
 
     // SearchBar Related Variables
     val query = remember { mutableStateOf("") }
